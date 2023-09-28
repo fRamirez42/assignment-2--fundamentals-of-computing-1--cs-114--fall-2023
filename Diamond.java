@@ -27,7 +27,7 @@ public class Diamond {
 
           for(int i = 3; i <= inputNumber; i = i+2){
 
-            spaces++;
+            spaces++; //Counts spaces needed
 
           }
 
@@ -57,6 +57,7 @@ public class Diamond {
 
         }
 
+        //Resets the starting point
         stars = stars - 4;
         spaces = spaces + 2;
 
