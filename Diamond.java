@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Diamond {
   public static void main(String[] args) {
 
+    //Variables
+
     Scanner scan = new Scanner(System.in);
 
     int inputNumber = 0;
@@ -31,9 +33,8 @@ public class Diamond {
           System.out.print(" "); //Set the first star
 
         }
-        System.out.print("*");
 
-        System.out.println(" ");
+        System.out.println("*");
 
         spaces--;
 
@@ -54,9 +55,7 @@ public class Diamond {
           for(int j = 0; j < stars; j++)
           {
 
-            System.out.print("*");
-
-            System.out.print(" ");
+            System.out.print("* ");
 
           }
 
@@ -89,9 +88,7 @@ public class Diamond {
          for(int j = 0; j < stars; j++)
           {
 
-          System.out.print("*");
-
-          System.out.print(" ");
+          System.out.print("* ");
 
           }
 
@@ -110,10 +107,7 @@ public class Diamond {
 
         }
 
-        System.out.print("*");
-
-        System.out.println(" ");
-
+        System.out.println("* ");
 
       } else {
 
@@ -160,6 +154,8 @@ public class Diamond {
         stars = stars - 4;
 
         spaces = spaces + 2;
+
+        //Bottom half of Diamond
 
         for(int i = 0; i <= inputNumber/2; i++)
         {
