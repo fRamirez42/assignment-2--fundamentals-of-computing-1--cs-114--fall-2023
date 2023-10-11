@@ -59,19 +59,20 @@ public class Diamond {
 
           }
 
-          spaces = spaces - 2;
+          spaces-=2;
 
-          stars = stars + 2;
+          stars+=2;
 
           System.out.println();
 
         }
 
-        //Reset the variables for bottom half of Diamond
+        /*End of last loop takes 2 spaces and adds 2 extra stars. We use these operation to reset the last loop, and add 2 to spaces and substract
+        2 more to account for the next line. For a total of 4*/
 
-        spaces = spaces + 4;
+        spaces+=4;;
 
-        stars = stars - 4;
+        stars-=4;
 
         //Bottom hald of Diamond
 
@@ -92,9 +93,9 @@ public class Diamond {
 
           }
 
-          spaces = spaces + 2;
+          spaces+=2;
 
-          stars = stars - 2;
+          stars-=2;
 
           System.out.println();
 
@@ -143,17 +144,20 @@ public class Diamond {
           }
 
           System.out.println(" ");
-          stars = stars + 2;
+
+          stars+=2;
+
           spaces--;
 
 
         }
 
-        //Resets the starting point for bottom half
+        /*End of last loop substracts 2 spaces and adds 2 extra stars. We use these operation to reset the last loop, and add 2 to spaces and substract
+        2 more to account for the next line. For a total of 4*/
 
-        stars = stars - 4;
+        stars-=4;
 
-        spaces = spaces + 2;
+        spaces+=2;
 
         //Bottom half of Diamond
 
@@ -175,7 +179,9 @@ public class Diamond {
           }
 
           System.out.println(" ");
-          stars = stars - 2;
+
+          stars-=2;
+
           spaces++;
 
 
