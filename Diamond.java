@@ -42,17 +42,17 @@ public class Diamond {
 
         //Top Half of Diamond
 
-        for(int i = 0; i < inputNumber/2; i++)
+        for(int row = 0; row < inputNumber/2; row++)
         {
 
-          for(int j =0; j <= spaces; j++)
+          for(int columnSpace =0; columnSpace <= spaces; columnSpace++)
           {
 
             System.out.print(" ");
 
           }
 
-          for(int j = 0; j < stars; j++)
+          for(int columnStar = 0; columnStar < stars; columnStar++)
           {
 
             System.out.print("* ");
@@ -76,17 +76,17 @@ public class Diamond {
 
         //Bottom hald of Diamond
 
-        for(int i = 0; i < (inputNumber/2)-1; i++) //inputNumber divided by 2 to only do the bottom half. Substracted by 1 since the middle is already done.
+        for(int row = 0; row < (inputNumber/2)-1; row++) //inputNumber divided by 2 to only do the bottom half. Substracted by 1 since the middle is already done.
         {
 
-          for(int j =0; j <= spaces; j++)
+          for(int columnSpace = 0; columnSpace <= spaces; columnSpace++)
           {
 
             System.out.print(" ");
 
           }
 
-         for(int j = 0; j < stars; j++)
+         for(int columnStar = 0; columnStar < stars; columnStar++)
           {
 
             System.out.print("* ");
@@ -108,35 +108,31 @@ public class Diamond {
 
         }
 
-        System.out.println("* ");
+        System.out.println("*");
 
       } else {
 
         //Start of Odd Diamond
 
+        for(int i = 3; i <= inputNumber; i = i+2){
 
+          spaces++; //Counts spaces needed to place first star
 
-          for(int i = 3; i <= inputNumber; i = i+2){
-
-            spaces++; //Counts spaces needed to place first star
-
-          }
-
-
+        }
 
         //Top half of Diamond
 
-        for(int i = 0; i <= inputNumber/2; i++)
+        for(int row = 0; row <= inputNumber/2; row++)
         {
 
-          for(int j = 1; j <= spaces; j++)
+          for(int columnSpace = 1; columnSpace <= spaces; columnSpace++)
           {
 
             System.out.print(" ");
 
           }
 
-          for(int j = 1; j<= stars; j++)
+          for(int columnStar = 1; columnStar<= stars; columnStar++)
           {
 
             System.out.print("*");
@@ -152,8 +148,8 @@ public class Diamond {
 
         }
 
-        /*End of last loop substracts 2 spaces and adds 2 extra stars. We use these operation to reset the last loop, and add 2 to spaces and substract
-        2 more to account for the next line. For a total of 4*/
+        /*End of last loop substracts 2 spaces and adds 4 extra stars. We use these operation to reset the last loop, and add 2 to spaces and substract
+        4 more to account for the next line*/
 
         stars-=4;
 
@@ -161,17 +157,17 @@ public class Diamond {
 
         //Bottom half of Diamond
 
-        for(int i = 0; i <= inputNumber/2; i++)
+        for(int row = 0; row <= inputNumber/2; row++)
         {
 
-          for(int j = 1; j <= spaces; j++)
+          for(int columnSpace = 1; columnSpace <= spaces; columnSpace++)
           {
 
             System.out.print(" ");
 
           }
 
-          for(int j = 1; j<= stars; j++)
+          for(int columnStar = 1; columnStar <= stars; columnStar++)
           {
 
             System.out.print("*");
