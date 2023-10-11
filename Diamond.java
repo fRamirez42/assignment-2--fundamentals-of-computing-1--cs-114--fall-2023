@@ -15,17 +15,20 @@ public class Diamond {
 
     inputNumber = scan.nextInt();
 
+    scan.close();
+
     if(inputNumber > 0){
 
       if(inputNumber % 2 == 0){
 
+        //Start of Even Diamond
 
         spaces = inputNumber-1;
 
         for(int i = 0; i <= spaces; i++)
         {
 
-          System.out.print(" ");
+          System.out.print(" "); //Set the first star
 
         }
         System.out.print("*");
@@ -35,6 +38,8 @@ public class Diamond {
         spaces--;
 
         stars++;
+
+        //Top Half of Diamond
 
         for(int i = 0; i < inputNumber/2; i++)
         {
@@ -63,10 +68,13 @@ public class Diamond {
 
         }
 
+        //Reset the variables for bottom half of Diamond
+
         spaces = spaces + 4;
 
         stars = stars - 4;
 
+        //Bottom hald of Diamond
 
         for(int i = 0; i < (inputNumber/2)-1; i++)
         {
@@ -98,7 +106,7 @@ public class Diamond {
         for(int i = 0; i <= inputNumber - 1; i++)
         {
 
-          System.out.print(" ");
+          System.out.print(" "); //Last star to finish of Even Diamond
 
         }
 
@@ -109,6 +117,8 @@ public class Diamond {
 
       } else {
 
+        //Start of Odd Diamond
+
         if(inputNumber != 1){
 
           for(int i = 3; i <= inputNumber; i = i+2){
@@ -118,6 +128,8 @@ public class Diamond {
           }
 
         }
+
+        //Top half of Diamond
 
         for(int i = 0; i <= inputNumber/2; i++)
         {
@@ -143,8 +155,10 @@ public class Diamond {
 
         }
 
-        //Resets the starting point
+        //Resets the starting point for bottom half
+
         stars = stars - 4;
+
         spaces = spaces + 2;
 
         for(int i = 0; i <= inputNumber/2; i++)
