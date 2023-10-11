@@ -19,7 +19,93 @@ public class Diamond {
 
       if(inputNumber % 2 == 0){
 
-        System.out.println("Its Even!");
+
+        spaces = inputNumber-1;
+
+        for(int i = 0; i <= spaces; i++)
+        {
+
+          System.out.print(" ");
+
+        }
+        System.out.print("*");
+
+        System.out.println(" ");
+
+        spaces--;
+
+        stars++;
+
+        for(int i = 0; i < inputNumber/2; i++)
+        {
+
+          for(int j =0; j <= spaces; j++)
+          {
+
+            System.out.print(" ");
+
+          }
+
+          for(int j = 0; j < stars; j++)
+          {
+
+            System.out.print("*");
+
+            System.out.print(" ");
+
+          }
+
+          spaces = spaces - 2;
+
+          stars = stars + 2;
+
+          System.out.println();
+
+        }
+
+        spaces = spaces + 4;
+
+        stars = stars - 4;
+
+
+        for(int i = 0; i < (inputNumber/2)-1; i++)
+        {
+
+          for(int j =0; j <= spaces; j++)
+          {
+
+            System.out.print(" ");
+
+          }
+
+         for(int j = 0; j < stars; j++)
+          {
+
+          System.out.print("*");
+
+          System.out.print(" ");
+
+          }
+
+          spaces = spaces + 2;
+
+          stars = stars - 2;
+
+          System.out.println();
+
+        }
+
+        for(int i = 0; i <= inputNumber - 1; i++)
+        {
+
+          System.out.print(" ");
+
+        }
+
+        System.out.print("*");
+
+        System.out.println(" ");
+
 
       } else {
 
