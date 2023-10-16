@@ -59,6 +59,7 @@ public class Diamond {
           for(int columnStar = 0; columnStar < stars; columnStar++) {
             System.out.print("* ");
           }
+
           spaces+=2;
           stars-=2;
           System.out.println();
